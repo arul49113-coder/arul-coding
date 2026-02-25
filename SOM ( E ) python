@@ -1,0 +1,29 @@
+# Strength of Materials Calculator in Python
+
+# Stress = Force / Area
+# Strain = Change in Length / Original Length
+# Young's Modulus = Stress / Strain
+
+def calculate_stress(force, area):
+    return force / area
+
+def calculate_strain(change_length, original_length):
+    return change_length / original_length
+
+def calculate_youngs_modulus(stress, strain):
+    return stress / strain
+
+# Example usage
+force = float(input("Enter the applied force (N): "))
+area = float(input("Enter the cross-sectional area (m^2): "))
+change_length = float(input("Enter the change in length (m): "))
+original_length = float(input("Enter the original length (m): "))
+
+stress = calculate_stress(force, area)
+strain = calculate_strain(change_length, original_length)
+youngs_modulus = calculate_youngs_modulus(stress, strain)
+
+print("\n--- Results ---")
+print(f"Stress = {stress:.2f} N/m^2")
+print(f"Strain = {strain:.6f}")
+print(f"Young's Modulus = {youngs_modulus:.2e} N/m^2")
