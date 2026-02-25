@@ -1,0 +1,50 @@
+# Library Book Rack Program in Python
+
+class Library:
+    def __init__(self):
+        self.books = []
+
+    def add_book(self, title):
+        self.books.append(title)
+        print(f'"{title}" has been added to the rack.')
+
+    def remove_book(self, title):
+        if title in self.books:
+            self.books.remove(title)
+            print(f'"{title}" has been removed from the rack.')
+        else:
+            print(f'"{title}" not found in the rack.')
+
+    def display_books(self):
+        if not self.books:
+            print("The rack is empty.")
+        else:
+            print("\nBooks in the rack:")
+            for i, book in enumerate(self.books, start=1):
+                print(f"{i}. {book}")
+
+# Example usage
+library = Library()
+
+while True:
+    print("\n--- Library Menu ---")
+    print("1. Add Book")
+    print("2. Remove Book")
+    print("3. Display Books")
+    print("4. Exit")
+
+    choice = input("Enter your choice (1-4): ")
+
+    if choice == "1":
+        title = input("Enter book title: ")
+        library.add_book(title)
+    elif choice == "2":
+        title = input("Enter book title to remove: ")
+        library.remove_book(title)
+    elif choice == "3":
+        library.display_books()
+    elif choice == "4":
+        print("Exiting... Goodbye!")
+        break
+    else:
+        print("Invalid choice. Please try again.")
