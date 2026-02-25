@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library Book Rack</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .sidebar {
+            width: 25%;
+            background: #ddd;
+            padding: 15px;
+        }
+        .content {
+            width: 75%;
+            background: #fff;
+            padding: 20px;
+        }
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style-type: square;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .book-card {
+            border: 1px solid #ccc;
+            margin: 10px 0;
+            padding: 10px;
+            background: #fafafa;
+        }
+        .book-card h3 {
+            margin: 0;
+        }
+        .book-card p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📚 My Library Book Rack</h1>
+        <p>Explore, Read, and Enjoy!</p>
+    </header>
+
+    <nav>
+        <a href="#fiction">Fiction</a>
+        <a href="#nonfiction">Non-Fiction</a>
+        <a href="#science">Science</a>
+        <a href="#history">History</a>
+    </nav>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Categories</h2>
+            <ul>
+                <li><a href="#fiction">Fiction</a></li>
+                <li><a href="#nonfiction">Non-Fiction</a></li>
+                <li><a href="#science">Science</a></li>
+                <li><a href="#history">History</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <section id="fiction">
+                <h2>Fiction Books</h2>
+                <div class="book-card">
+                    <h3>The Great Gatsby</h3>
+                    <p>Author: F. Scott Fitzgerald</p>
+                    <p>A classic novel set in the Jazz Age.</p>
+                </div>
+                <div class="book-card">
+                    <h3>1984</h3>
+                    <p>Author: George Orwell</p>
+                    <p>Dystopian novel about surveillance and control.</p>
+                </div>
+                <div class="book-card">
+                    <h3>To Kill a Mockingbird</h3>
+                    <p>Author: Harper Lee</p>
+                    <p>A story of justice and racial inequality.</p>
+                </div>
+            </section>
+
+            <section id="nonfiction">
+                <h2>Non-Fiction Books</h2>
+                <div class="book-card">
+                    <h3>Sapiens</h3>
+                    <p>Author: Yuval Noah Harari</p>
+                    <p>A brief history of humankind.</p>
+                </div>
+                <div class="book-card">
+                    <h3>Educated</h3>
+                    <p>Author: Tara Westover</p>
+                    <p>A memoir about resilience and learning.</p>
+                </div>
+            </section>
+
+            <section id="science">
+                <h2>Science Books</h2>
+                <div class="book-card">
+                    <h3>A Brief History of Time</h3>
+                    <p>Author: Stephen Hawking</p>
+                    <p>Exploring the universe and black holes.</p>
+                </div>
+                <div class="book-card">
+                    <h3>The Selfish Gene</h3>
+                    <p>Author: Richard Dawkins</p>
+                    <p>Evolution explained through genetics.</p>
+                </div>
+            </section>
+
+            <section id="history">
+                <h2>History Books</h2>
+                <div class="book-card">
+                    <h3>Guns, Germs, and Steel</h3>
+                    <p>Author: Jared Diamond</p>
+                    <p>How geography shaped civilizations.</p>
+                </div>
+                <div class="book-card">
+                    <h3>The Diary of a Young Girl</h3>
+                    <p>Author: Anne Frank</p>
+                    <p>A powerful account of life during WWII.</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 My Library Book Rack | Designed with HTML & CSS</p>
+    </footer>
+</body>
+</html>
